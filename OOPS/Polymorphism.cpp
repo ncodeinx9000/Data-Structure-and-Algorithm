@@ -2,34 +2,37 @@
 #include <string>
 
 using namespace std;
-// Compile time Polymorpishm
-// Function Overloading - to achieve Polymorphism
-// class Add
-// {
-// public:
-//   // x, y, two int addition
-//   int sum(int x, int y)
-//   {
-//     cout << "Sum of two int" << endl;
-//     return x + y;
-//   }
+// Compile time Polymorpishm Types - 1) Function Overloading - to achieve Polymorphism
+/*
+class Add
+{
+public:
+  // x, y, two int addition
+  int sum(int x, int y)
+  {
+    cout << "Sum of two int" << endl;
+    return x + y;
+  }
 
-//   // x, y, z, three int addition
-//   int sum(int x, int y, int z)
-//   {
-//     cout << "Sum of three int" << endl;
-//     return x + y + z;
-//   }
+  // x, y, z, three int addition
+  int sum(int x, int y, int z)
+  {
+    cout << "Sum of three int" << endl;
+    return x + y + z;
+  }
 
-//   // double add
-//   double sum(double x, double y)
-//   {
-//     cout << "Sum of two double" << endl;
-//     return x + y;
-//   }
-// };
+  // double add
+  double sum(double x, double y)
+  {
+    cout << "Sum of two double" << endl;
+    return x + y;
+  }
+};
+*/
 
-// Operator Overloading
+/***************************************************************************************************************************/
+
+// 2) Operator Overloading
 class Complex
 {
 public:
@@ -43,12 +46,12 @@ public:
 
   Complex(int r, int i) : real(r), imag(i) {};
 
-  // syntax
-  // Ret_type operator<op>(args)
-  // {
-  //   // adfsbvdd
-  //   return <>
-  // }
+    // syntax for operator overloading
+  /*Ret_type operator<op>(args)
+  {
+    // adfsbvdd
+    return <>
+  }*/
 
   Complex operator+(const Complex &B)
   {
@@ -79,6 +82,7 @@ public:
 };
 int main()
 {
+  // Function Overloading example
   //   int x = 5, y = 3;
   //   int z = 2;
   //   Add add;
